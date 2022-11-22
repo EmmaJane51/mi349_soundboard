@@ -7,4 +7,9 @@ button {
     padding: 20px;
     width: 200px;
     margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+button span {
+    cursor: pointer;
 }
