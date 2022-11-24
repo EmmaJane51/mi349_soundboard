@@ -16,30 +16,29 @@ document.onclick = function() {
   audio.play();
 }
 
-const sounds = ['Applause', 'Doorbell', 'Laser']
+const sounds = ['Applause', 'Doorbell', 'Laser'];
 
-sounds.forEach(sound => {
-const btn = document.createElement('button')
-btn.classList.add('btn')
+sounds.forEach((sound) => {
+const btn = document.createElement('button');
+btn.classList.add('btn');
 
-btn.innerText = sound
+btn.innerText = sound;
 
 btn.addEventListener('click', () => {
-  stopSongs()
+  stopSongs();
 
-    document.getElementById(sound).play()
-})
+    document.getElementById(sound).play();
+});
 
-document.getElementById('buttons').
-appendChild(btn)
-})
+document.getElementById('buttons').appendChild
+(btn);
+});
 
-function stopSongs() {
-  sounds.forEach(sound => {
-    const song = document.getElementById
-    (sound)
+function stopSongs(){
+  sounds.forEach(sound =>{
+    const song = document.getElementById(sound);
 
-    song.pause()
+    song.pause();
     song.currentTime = 0;
-  })
+  });
 }
